@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body{
+    height: 100dvh;
+    background-image: linear-gradient(to left, rgba(0 0 0 / .9),rgba(0 0 0 / .7) ), url(/imagenes/escuela-matrix.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+@font-face {
+    font-family: 'myFamily';
+    src: url(/fonts/Roboto/Roboto-Bold.ttf);
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* barra de navegacion */
+.navbar .navbar-1, .navbar .navbar-2{
+    background-color: blue;
+    list-style-type: none;
+}
+.navbar .navbar-1 {
+    padding: .5rem;
+}
+.navbar .navbar-1 li, .navbar .navbar-2 li{
+    padding: .6rem;
+    text-decoration: none;
+}
+
+.navbar .navbar-1 #submenu-2 .navbar-2 li{
+    width: 120px;
+    margin-left: 1px;
+    background-color: navy;
+    border-bottom: 1px solid black;
+}
+.navbar .navbar-1 #submenu-2 .navbar-2 li a{
+    width: 100%;
+    /* display: inline-block; */
+    /* background: navy; */
+}
+.navbar .navbar-1 li a, .navbar .navbar-2 li a{
+    padding: .1rem;
+    text-decoration: none;
+}
+.navbar .navbar-1 li{
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.navbar li .navbar-2{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+
+/* header */
+.header{
+    padding: 1rem 0;
+}
+.header .titulo img{
+    filter: drop-shadow(5px 2px 8px yellow);
+}
+.titulo h1{
+    font-family: 'myFamily';
+    font-size: 12rem;
+    letter-spacing: -10px;
+    -webkit-text-stroke: 2px navy;
+    -webkit-text-fill-color: white;
+}
+
+.header h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.header p{
+    margin: .5rem auto;
+    width: 80%;
+    text-align: justify;
+}
+header .fecha{
+    text-align: right;
+    padding: 1rem 0;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+main h3{
+    margin: 1rem 0;
+    text-align: center;
+    color: lightblue;
+}
+main h3 span{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    cursor: pointer;
+    color: lightblue;
+}
+main h3 span:hover{
+    transform: scale(1.2);
+}
+main details{
+    border: 1px solid lightblue;
+    border-radius: .3rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+main details:hover{
+    box-shadow: 2px 4px 5px blue;
+}
+main details .menu{
+    margin-left: 100px;
+}
+main details .menu-2{
+    margin-left: 50px;
+}
+main details .menu a:hover{
+    color: lightblue;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+main section{
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+section .video{
+    width: 320px;
+    height: 320px;
+    box-shadow: 2px 3px 5px lightblue, 1px 3px navy;
+    margin-bottom: 2.5rem;
+}
+section .video #video-presentacion{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+section .video figure figcaption{
+    text-align: center;
+    margin-top: .6rem;
+}
+section .presentacion{
+    width: 300px;
+}
+section .presentacion h4{
+    margin-bottom: 1rem;
+}
+section .presentacion p{
+    text-align: justify;
+}
+footer{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: black;
+}
+footer address{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer address p,footer address h3{
+    margin-top: .3rem;
+}
+footer p{
+    width: 80%;
+    margin: 0 auto;
+}
+

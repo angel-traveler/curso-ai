@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100dvb;
+    background: black;
+    padding: 3rem;
+}
+main .container-principal{
+    width: 80%;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.container-principal section:first-child{
+    margin: 1rem 0;
+}
+.container-principal .articulo-2 article{
+    margin: 2rem 0;
+}
+.container-principal .articulo-2 article p{
+    margin: 2rem 0;
+    text-align: justify;
+}
+.container-principal .articulo-2 article ul li{
+    margin: 1rem;
+    text-align: justify;
+}

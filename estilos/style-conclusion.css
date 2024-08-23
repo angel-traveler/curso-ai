@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+/* poner el video atras */
+
+#hero{
+    min-height: 100vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #c1c1d1;
+    mix-blend-mode: overlay;
+    background: url(/imagenes/robot-2.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+.promo{
+    padding: 1.5rem;
+    /* margin: 50px auto; genera un margen superior error*/
+    /* position: relative; */
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translatex(-50%); /*centrado vertical*/
+    z-index: 2;
+    color:white;
+    width: 400px;
+    height: 400px;
+}
+.promo2{
+    border: 1px solid lightblue;
+    background: rgba(0, 0, 0, .7);
+    margin-top: 40px;
+    width: auto;
+    height: 400px;
+    padding: 11px;
+}
+.promo2 h1{
+    font-size: 2rem;
+}
+.promo2 p{
+    text-align: justify;
+    margin: 1rem 0;
+}
+#btn-conclusiones{
+    text-align: center;
+    margin-top: 1rem;
+    width: 98%;
+    padding: 1rem;
+    background: blue;
+    border-radius: .5rem; 
+    box-shadow: 1px 3px 5px lightblue;
+}
+#btn-conclusiones a{
+    color: white;
+    display: block;
+    font-size: 1.4rem;
+}
